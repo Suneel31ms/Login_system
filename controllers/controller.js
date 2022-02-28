@@ -4,9 +4,7 @@ const sgMail = require("@sendgrid/mail");
 
 const UserDb = require("../models/model");
 
-sgMail.setApiKey(
-  "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"
-);
+sgMail.setApiKey("xxxxxxxxxx");
 
 exports.signUp = (req, res) => {
   const user = new UserDb({
