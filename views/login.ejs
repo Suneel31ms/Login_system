@@ -1,0 +1,28 @@
+<%- include("includes/header") -%>
+
+<div class="form-container">
+  <div>
+    <h2>Login System</h2>
+    <span>Log in for the existing user</span>
+    
+  </div>
+  <form action="/login" method="POST">
+    <div class="input-items">
+      <label for="Email">Email</label>
+      <input type="text" name="email" value="" placeholder="example@gmail.com">
+  </div>
+
+  <div class="input-items">
+    <label for="pass">Password</label>
+    <input type="password" name="password" value="" placeholder="******">
+</div>
+
+    <button type="submit" class="btn">Login</button>
+   
+  </form>
+ <div>
+  <a href="/register">Register</a>
+ </div>
+</div>
+
+<%- include("includes/footer") -%>

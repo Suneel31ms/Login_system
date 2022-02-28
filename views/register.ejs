@@ -1,0 +1,73 @@
+<%- include('includes/header') %>
+
+<div class="form-container">
+  <h2>Register System</h2>
+
+  <div >
+    
+    <form action="/register" method="POST">
+       <div>
+           <div class="input-items">
+               <label for="name">UserName</label>
+               <input type="text" name="userName" value="" placeholder="UserName">
+           </div>
+   
+           <div class="input-items">
+               <label for="Email">Email</label>
+               <input type="text" name="email" value="" placeholder="example@gmail.com">
+           </div>
+           
+           <div class="input-items">
+               <label for="pass">Password</label>
+               <input type="password" name="password" value="" placeholder="******">
+           </div>
+   
+           <div class="input-items">
+               <label for="gender">Gender</label>
+               <div >
+                   <input type="radio" id="radio-2" name="gender" value="Male" >
+                   <label for="radio-2" class="radio-label">Male</label>
+               </div>
+               <div >
+                   <input type="radio" id="radio-3" name="gender" value="Female" >
+                   <label for="radio-3" class="radio-label">Female</label>
+               </div>
+           </div>
+   
+           <div class="input-items">
+               <label for="gender">Status</label>
+               <div>
+                   <input type="radio" id="radio-4" name="status" value="Active" >
+                   <label for="radio-4">Active</label>
+               </div>
+               <div>
+                   <input type="radio" id="radio-5" name="status" value="Inactive" >
+                   <label for="radio-5">InActive</label>
+               </div>
+           </div>
+   
+   
+           <div class="input-items">
+               <label for="City">City</label>
+               <input type="text" name="city">
+           </div>
+   
+           <div class="input-items">
+               <label for="State">State</label>
+               <input type="text" name="state" >
+           </div>
+           <div>
+               <button type="submit" class="btn">Register</button>
+               
+           </div>
+   
+       </div>
+   </form>
+   <div>
+    <a href="/">LogIn</a>
+   </div>
+   </div>
+
+  
+</div>
+<%- include('includes/footer') %>

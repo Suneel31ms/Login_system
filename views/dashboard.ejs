@@ -1,0 +1,14 @@
+<%- include('includes/header') %>
+<div class="form-container">
+  <h2><u>Dashboard</u></h2>
+  <h3>USERID:- <%= data._id %></h3>
+  <h3>USERNAME:- <%= data.userName %></h3>
+  <h3>EMAILID:- <%= data.email %></h3>
+  <!-- <h3>PASSWORD:- <%= data.password %></h3> -->
+  <h3>GENDER:- <%= data.gender %></h3>
+  <h3>STATUS:- <%= data.status %></h3>
+  <h3>CITY:- <%= data.city %></h3>
+  <h3>STATE:- <%= data.state %></h3>
+  <a href="/logout">Logout</a>
+</div>
+<%- include('includes/footer') %>
